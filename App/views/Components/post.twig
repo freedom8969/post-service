@@ -1,0 +1,27 @@
+{% block content %}
+
+    <div class="row d-flex" id="post_{{post.id}}">
+
+        <div class="retweet rounded border" style="width: 100%">
+            <div class="tweet__retweet">
+                <div class="retweet__author">
+                    <div class="author-name d-flex justify-content-between" style="width: 100%">
+                        <div class="">{{post.firstname}} {{post.lastname}}</div>
+                        <div class="">{{post.created_at}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet__text">
+                {{post.body}}
+            </div>
+            {% if post.userId==id %}
+                <form action="delPost?id={{ post.id }}" method="post">
+                    <button id="pressToLike" style="background: none; border: none" type="submit">
+                        <i class="fas fa-trash-alt toolbar-icon" style="color: #ccd6dd"></i>
+                    </button>
+                </form>
+            {%  endif %}
+        </div>
+    </div>
+
+{% endblock %}

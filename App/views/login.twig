@@ -1,0 +1,26 @@
+{% extends 'Layout/default.twig' %}
+
+{% block content %}
+
+    <div class="login">
+        <div class="login-container">
+            <form method="post" action="login" id="form">
+                <div class="login-main">
+                    <p class="login-main__title">Log in</p>
+                    <input id="Email" name="email" type="text" class="login-main__line " placeholder="Email" value="{{ email }}">
+                    <p id="emailAdvice" class="advice m-login">{{ dataErrors['emailError'] }}</p>
+                    <input id="Password" name="password" type="password" class="login-main__line " placeholder="Password">
+                    <p id="passwordAdvice" class="advice m-login">{{ dataErrors['passwordError'] }}</p>
+                    <input hidden name ="action" value="login">
+                    <input type="submit" class="login-main__btn" value="SUBMIT">
+                </div>
+            </form>
+            <div class="login-footer">
+                <p class="login-footer__question">Need an account? </p>
+                <a class="login-footer__href" href="signup">SIGN UP</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

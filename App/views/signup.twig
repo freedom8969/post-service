@@ -1,0 +1,46 @@
+{% extends 'Layout/default.twig' %}
+
+{% block content %}
+
+    <div class="registration-page">
+        <div class="registr-container">
+            <div class="registr-bord">
+                <p class="registr-bord__title">Create an account</p>
+                <form action="signup" method="post" id="form">
+                    <div class="registr-line registr-first">
+                        <div class="d-block reg-style-2  reg-style-3">
+                            <input id="FirstName" type="text" name="firstName" class="reg-style " placeholder="First Name" value="{{ data['firstname'] }}">
+                            <p id="fNameAdvice" class="advice">{{ dataErrors['errorFirstName'] }}</p>
+                        </div>
+                        <input hidden name="action" value="signup">
+                        <div class="d-block reg-style-2">
+                            <input id="LastName" type="text" name="lastName" class="reg-style  " placeholder="Last Name" value="{{ data['lastname'] }}">
+                            <p id="lNameAdvice" class="advice">{{ dataErrors['errorLastName'] }}</p>
+                        </div>
+                    </div>
+                    <div class="registr-line">
+                        <input id="Email" type="text" name="email" class="reg-style" placeholder="Email" value="{{ data['email'] }}">
+                        <p id="emailAdvice" class="advice">{{ dataErrors['errorEmail'] }}</p>
+                    </div>
+                    <div class="registr-line">
+                        <input id="Password" type="password" name="password" class="reg-style" placeholder="Password">
+                        <br>
+                        <p id="passwordAdvice" class="advice">{{ dataErrors['errorPassword'] }}</p>
+                    </div>
+                    <div class="registr-line">
+                        <input id="Confirm" type="password" name="confirmPassword" class="reg-style" placeholder="Confirm password">
+                        <p id="confirmAdvice" class="advice">{{ dataErrors['errorConfirmPassword'] }}</p>
+                    </div>
+                    <div class="registr-submit">
+                        <input type="submit" value="SUBMIT" class="registr-submit__btn">
+                    </div>
+                </form>
+            </div>
+            <div class="registr-footer ">
+                <p class="registr-footer__question ">Already have an account?</p>
+                <a href="login" class="registr-footer__log-href">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

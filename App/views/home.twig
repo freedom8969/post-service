@@ -1,0 +1,37 @@
+{% extends 'Layout/default.twig' %}
+
+{% block content %}
+<div class="home_header d-flex bg-secondary justify-content-center">
+    <a href="logOut" class="btn btn-secondary">Logout</a>
+</div>
+<div class="home_page">
+    <div class="row d-flex" style="min-width: 100%">
+        <div class="border shadow-sm mb-3 p-3" style="min-width: 100%">
+            <form action="Post" method="post" id="formForPost">
+                <div class="form-group" id="tweet">
+                    <textarea class="border form-control" id="tweetsNewTweet" placeholder="Create your post" name="body"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-secondary"> Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% for post in arr %}
+        {{ include('Components/post.twig') }}
+    {% endfor %}
+</div>
+
+    <script>
+
+        $('#tweet').on( 'change keyup keydown paste cut', 'textarea', function (){
+
+            $(this).height(0).height(this.scrollHeight);
+
+        }).find( 'textarea' ).change();
+
+    </script>
+{% endblock %}
+

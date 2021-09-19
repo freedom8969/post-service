@@ -1,0 +1,267 @@
+body{
+  height: 100vh;
+}
+.sign-container {
+  display: block;
+  margin:  125px 35%;
+  width: 30%; }
+
+.home_page{
+  margin: 30px 200px 0 200px;
+}
+
+.login {
+  padding: 60px 0;
+  justify-content: center;
+  background-color: #fbf7f7;
+  height: 100vh; }
+
+.login-container {
+  display: grid;
+  margin: 0 30% auto 30%;
+  width: auto;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.25); }
+
+.login-main {
+  padding: 20px 10% 20px 10%;
+  background-color: #ffffff;
+  display: block; }
+
+.login-footer {
+  padding: 20px 30% 20px 10%;
+  background-color: #111112;
+  display: flex; }
+
+.login-main__title {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 30px; }
+
+.login-main__line {
+  display: block;
+  outline: none;
+  border-style: none;
+  border-bottom: 2px inset;
+  height: 30px;
+  width: 100%;
+  border-color: #c0c0c0; }
+
+.login-main__btn {
+  color: #ffffff;
+  background-color: #4bd582;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 100vh;
+  transition: 0.3s;
+  outline: none; }
+
+.login-main__btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1); }
+
+.login-footer__question {
+  margin: 0;
+  color: #fbf9fa;
+  padding-right: 3px; }
+
+.login-main__line:hover {
+  transition: all 0.3s ease;
+  border-color:  #4bd582; }
+
+.login-main__line:focus {
+  transition: all 0.3s ease;
+  border-color: #03ad47; }
+
+.login-footer__href,
+.login-footer__question {
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px; }
+
+.login-footer__href {
+  color: #4bd582; }
+
+
+
+
+
+
+.registration-page {
+  display: flex;
+  background-color: #fbf7f7;
+  width: 100%;
+  height: 100vh;
+}
+
+.registr-container {
+  display: grid;
+  margin: 60px 25% auto 25%;
+  width: 50%;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.25); }
+
+.registr-bord {
+  background-color: #ffffff;
+  padding: 20px 5%;
+  display: block; }
+
+.registr-bord__title {
+  font-size: 24px;
+  margin: 0 0 30px 0; }
+
+.registr-line {
+  margin-bottom: 50px; }
+
+.registr-first {
+  display: flex;
+  justify-content: space-between; }
+
+.reg-style {
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border-style: none;
+  border-bottom: 2px inset;
+  transition: 0.3s;
+  border-color: #c0c0c0; }
+
+.reg-style-2 {
+  width: 48%; }
+
+
+.registr-submit__btn {
+  color: #ffffff;
+  background-color: #4bd582;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 100vh;
+  transition: 0.3s;
+  outline: none; }
+
+.registr-footer {
+  display: flex;
+  background-color: #111112;
+  padding: 0 5%;
+  height: 5em;
+  line-height: 5em;
+}
+
+.registr-footer__question {
+  color: #fbf9fa;
+  padding-right: 3px; }
+
+.registr-footer__question, .registr-footer__log-href {
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px; }
+
+.registr-footer__log-href {
+  color: #4bd582; }
+
+.registr-submit__btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.1); }
+
+.reg-style:hover {
+  transition: all 0.3s ease;
+  border-color: #4bd582; }
+
+.reg-style:focus {
+  transition: all 0.3s ease;
+  border-color: #03ad47; }
+
+
+.toolbar-icon {
+  transform: scale(0.8); }
+
+.retweet {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  max-width: 100%; }
+
+
+
+.tweet__text {
+  font-size: 16px;
+  padding-bottom: 15px;
+  color: #333333;
+  word-wrap: break-word; }
+
+
+
+
+.retweet__author {
+  display: flex;
+  text-align: end;
+  padding-bottom: 30px; }
+
+.author-name {
+  font-size: 13px;
+  padding-left: 5px;
+  line-height: 2; }
+
+.m-login {
+  margin-bottom: 50px; }
+
+.error-block{
+  padding-top: 100px;
+  background: #fff;
+  min-height: 100vh;
+  color: gray;
+  font-family: "Comic Sans MS";
+}
+.fa-sad-tear{
+  font-size: 160px;
+}
+.glitch404{
+  font-weight: bold;
+  font-size:100px;
+  position:relative;
+  margin: 0;
+}
+.glitchNotFound{
+  font-size: 40px;
+  font-weight: bold;
+}
+.glitchText{
+  font-size: 20px;
+}
+.glitchA{
+  position: relative;
+  color: gray;
+  display: block;
+  text-align: center;
+  /*text-decoration: none;*/
+  border: 2px solid gray;
+  font-size: 20px;
+  padding: 10px 20px;
+  overflow: hidden;
+  font-weight: bold;
+  transition: 1s all ease;
+}
+.glitchA span{
+  position: relative;
+  z-index: 10;
+}
+.glitchA:before{
+  background: gray;
+  content: "";
+  width: 102%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%,-50%) ;
+  transition: all 0.6s ease;
+}
+
+.glitchA:hover::before{
+  height: 100%;
+}
+.glitchA:hover{
+  text-decoration:none ;
+  color: white;
+}
